@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    position:relative;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+@font-face{
+    font-family:prompt-light;
+    src:url(../font/Prompt-Light.ttf)
+}
+@font-face{
+    font-family:nunto-bold;
+    src:url(../font/Nunito-bold.ttf)
+}
+@font-face{
+    font-family:nunto-light;
+    src:url(../font/Nunito-Light.ttf)
+}
+.col-0{
+    width:0%;
+}
+.col-1{
+    width:8.333333333333333%;
+}
+.col-2{
+    width:16.66666666666667%;
+}
+.col-3{
+    width:25%;
+}
+.col-4{
+    width:33.33333333333333%;
+}
+.col-5{
+    width:41.66666666666667%;
+}
+.col-6{
+    width:50%;
+}
+.col-7{
+    width:58.33333333333333%;
+}
+.col-8{
+    width:66.66666666666666%;
+}
+.col-9{
+    width:75%;
+}
+.col-10{
+    width:83.33333333333333%;
+}
+.col-11{
+    width:91.66666666666666%;
+}
+.col-12{
+    width:100%;
+}
+.col{
+    width:fit-content;
+}
+.col-fit{
+    width:100%;
+    height:100%;
+}
+.row{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+.row-reverse{
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+}
+.srow:after{
+    clear:both;
+    display:table;
+    content:"";
+}
+.t-center{
+    text-align: center;
+}
+.t-left{
+    text-align: left;
+}
+.t-right{
+    text-align:right;
+}
+.sha-1{
+    box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.200);
+}
+.sha-2{
+    box-shadow:0px 0px 20px 5px rgba(0, 0, 0, 0.150);
+}
+.sha-3{
+    box-shadow:0px 0px 30px 5px rgba(0, 0, 0, 0.100);
+}
+.rounded-1{
+    border-radius:50px;
+}
+.m-auto{
+    margin:auto;
+}
+.mb-1{
+    margin-bottom:1em;
+}
+.bg-none{
+    background-color:transparent;
+}
+.bg-black{
+    background-color:black;
+}
+.bg-white{
+    background-color:white;
+}
+.bg-red{
+    background-color:red;
+}
+.bg-green{
+    background-color:green;
+}
+.t-white{
+    color:white;
+}
+.t-1{
+    font-size:1rem;
+}
+.t-2{
+    font-size:2rem;
+}
+.t-3{
+    font-size:3rem;
+}
+.t-4{
+    font-size:4rem;
+}
+.t-5{
+    font-size:5rem;
+}
+.t-6{
+    font-size:6rem;
+}
+.t-b{
+    font-weight: bold;
+}
+.outl-1{
+    outline:1px solid black;
+}
+input.input-clear{
+    text-align:center;
+    border-bottom:none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    font-family:AumerFont;
+}
+input.input-clear:focus{
+    outline:none;
+    font-family:AumerFont;
+}
+input.see-off::-ms-reveal{
+    display: none;
+}
+.h-max{
+    height:100%;
+}
+.h-half{
+    height:50%;
+}
+div.middle{
+    left:50%;
+    top:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+}
+input.btn{
+    padding:.5em;
+    font-size: 1.5em;
+    border-radius: 50px;
+    border:none;
+}
+form.form-1 div.sign-up,form.form-1 div.sign-in,form.form-1 input{
+    transition:.5s ease;
+}
+form.form-1 input[name="username"],form.form-1 input[name="password"],form.form-2 input[name="password"],form.form-2 input[name="username"],form.form-2 input[name="confirm-password"]{
+    font-size: 1.5em;
+    padding:.5em;
+    width:25rem;
+}
+.btn-1{
+    padding:1em 1.5em;
+    background-color:whitesmoke;
+    font-size:1em;
+    border-radius:50px;
+    width:fit-content;
+}
+.error-msg{
+    position:absolute;
+    background:rgb(253, 171, 171);
+    border-radius:2px;
+    margin:.1rem;
+    left:50%;
+    transform:translateX(-50%);
+}
